@@ -20,7 +20,7 @@ func (f *LoggerFactory) NewLogger(category string) Logger {
 		writer:   f.writer,
 		category: category,
 		level:    f.level,
-		cli:      false,
+		cli:      f.cli,
 	}
 }
 
